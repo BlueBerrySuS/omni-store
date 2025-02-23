@@ -4,7 +4,7 @@ import { productsRef } from '../firebase/firebase.refs';
 
 
 
-const api = createApi({
+const productsApi = createApi({
     reducerPath: 'api',
     baseQuery: fetchBaseQuery({baseUrl: '/'}),
     endpoints: builder => ({
@@ -69,5 +69,5 @@ const api = createApi({
     })
 })
 
-export const { useGetProductsQuery, useGetProductQuery, useAddProductMutation, useUpdateProductMutation, useDeleteProductMutation } = api;
-export default api;
+export const { useGetProductsQuery, useGetProductQuery, useAddProductMutation, useUpdateProductMutation, useDeleteProductMutation } = productsApi;
+export default productsApi;
