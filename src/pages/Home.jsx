@@ -1,5 +1,3 @@
-import React from 'react';
-import MainHeader from '../components/Layout/MainHeader';
 import Hero from '../components/Shared/Hero/Hero';
 import Features from '../components/Shared/OurFeatures/OurFeatures';
 import PopularCategories from '../components/Shared/PopularCategories/PopularCategories';
@@ -11,11 +9,10 @@ import ClientTestimonials from '../components/Shared/ClientTestimonials/ClientTe
 import BrandLogos from '../components/Shared/BrandLogos/BrandLogos';
 import InstagramFeed from '../components/Shared/InstagramFeed/InstagramFeed';
 import Newsletter from '../components/Shared/Newsletter/Newsletter';
-import Footer from '../components/Layout/Footer';
 
 const Home = () => {
   return (
-    <>
+    <div className="flex flex-col items-center w-full">
           <Hero />
           <Features />
           <PopularCategories />
@@ -27,7 +24,7 @@ const Home = () => {
           <BrandLogos />
           <InstagramFeed />
           <Newsletter />
-    </>
+    </div>
   );
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col justify-center px-72 pt-16 w-full bg-zinc-900 text-zinc-500 max-md:px-5 max-md:max-w-full">
+    <footer className="flex flex-col items-center w-full px-72 pt-16 w-full bg-zinc-900 text-zinc-500 max-md:px-5 max-md:max-w-full">
       <div className="flex flex-wrap gap-5 justify-between items-start max-w-full text-black w-[1248px]">
         <div className="flex flex-col items-start self-stretch text-sm font-medium">
           <div className="flex gap-2 items-center text-3xl tracking-tighter leading-none whitespace-nowrap">

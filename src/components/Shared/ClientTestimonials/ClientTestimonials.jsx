@@ -1,7 +1,6 @@
-import React from 'react';
-
+// eslint-disable-next-line react/prop-types
 const TestimonialItem = ({ quote, name, role, avatar, rating }) => (
-  <div className="flex flex-col p-6 bg-white rounded-lg shadow-lg min-w-[240px] w-[424px] max-md:px-5 max-md:max-w-full">
+  <div className="flex m-2 flex-col p-6 bg-white rounded-lg shadow-lg min-w-[240px] w-[424px] max-md:px-5 max-md:max-w-full">
     <img
       loading="lazy"
       src="https://cdn.builder.io/api/v1/image/assets/TEMP/d8b276a7b4d833a02becc32bfdca2b311164a0c7baa47979ea72e2b14ae8d8e1?placeholderIfAbsent=true&apiKey=f50474a5b21d437fb9b7a7b7c8e64b46"
@@ -9,8 +8,8 @@ const TestimonialItem = ({ quote, name, role, avatar, rating }) => (
       alt="Quote icon"
     />
     <p className="mt-4 text-sm leading-5 text-black">{quote}</p>
-    <div className="flex gap-10 justify-between items-center pt-2 mt-4 w-full max-w-[376px]">
-      <div className="flex gap-3 items-center self-stretch my-auto text-center w-[168px]">
+    <div className="flex justify-between items-center pt-2 mt-4 w-full">
+      <div className="flex gap-3 items-center self-stretch my-auto text-left">
         <img
           loading="lazy"
           src={avatar}
@@ -22,7 +21,7 @@ const TestimonialItem = ({ quote, name, role, avatar, rating }) => (
           <div className="text-sm text-black">{role}</div>
         </div>
       </div>
-      <div className="flex gap-px items-start self-stretch my-auto">
+      <div className="flex gap-2px items-start self-stretch my-auto">
         {[...Array(5)].map((_, i) => (
           <img
             key={i}
@@ -63,21 +62,21 @@ const ClientTestimonials = () => {
   ];
 
   return (
-    <section className="flex flex-col justify-center items-center self-stretch py-16 mt-16 w-full bg-zinc-100 max-md:mt-10 max-md:max-w-full">
-      <div className="flex flex-col justify-center items-center px-72 w-full max-md:px-5 max-md:max-w-full">
-        <h2 className="self-stretch my-auto text-3xl font-semibold leading-tight text-center text-black">
+    <section className="flex flex-col justify-center items-center self-stretch py-16 mt-16 bg-zinc-100 max-md:mt-10 max-md:max-w-full">
+      <div className="flex flex-row justify-between items-center gap-250">
+        <h2 className="text-3xl font-semibold leading-tight text-black">
           Client Testimonials
         </h2>
-        <div className="flex gap-3 items-center mt-4">
-          <button aria-label="Previous testimonial" className="flex flex-col rotate-[3.141592653589793rad] w-[45px]">
-            <div className="flex shrink-0 bg-white rounded-full border border-solid border-neutral-200 h-[45px] stroke-[1px] w-[45px]" />
+        <div className="flex gap-1 items-center">
+          <button aria-label="Previous testimonial" className="flex flex-col rotate-[3.141592653589793rad] w-[35px]">
+            <div className="flex shrink-0 bg-white rounded-full border border-solid border-neutral-200 h-[35px] stroke-[1px] w-[35px]" />
           </button>
-          <button aria-label="Next testimonial" className="flex flex-col w-[45px]">
-            <div className="flex shrink-0 bg-red-500 rounded-full h-[45px] w-[45px]" />
+          <button aria-label="Next testimonial" className="flex flex-col w-[35px]">
+            <div className="flex shrink-0 bg-red-500 rounded-full h-[35px] w-[35px]" />
           </button>
         </div>
       </div>
-      <div className="flex flex-row justify-center items-center mt-8 max-md:flex-col max-md:max-w-full">
+      <div className="flex flex-row  items-center mt-8 max-md:flex-col max-md:max-w-full">
         {testimonials.map((testimonial, index) => (
           <TestimonialItem key={index} {...testimonial} />
         ))}

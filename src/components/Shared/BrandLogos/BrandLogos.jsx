@@ -8,7 +8,7 @@ const BrandLogos = () => {
   ];
 
   return (
-    <section className="flex gap-10 justify-evenly items-center py-16 w-full max-w-[1320px] max-md:max-w-full">
+    <section className="flex gap-10 justify-evenly items-center py-16 w-full max-w-[1320px]">
       {logos.map((logo, index) => (
         <React.Fragment key={index}>
           {index > 0 && (

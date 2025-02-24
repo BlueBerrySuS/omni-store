@@ -1,6 +1,5 @@
-import React from 'react';
-
-const ProductItem = ({ image, name, price, discountedPrice, rating }) => (
+/* eslint-disable react/prop-types */
+const ProductItem = ({ image, name, price, discountedPrice}) => (
   <div className="flex flex-col flex-1 pt-4 bg-white border border-solid border-neutral-200">
     {discountedPrice && (
       <div className="flex z-10 gap-1 justify-center items-center self-start px-2 py-1 ml-4 text-sm text-black whitespace-nowrap bg-red-500 rounded max-md:ml-2.5">
