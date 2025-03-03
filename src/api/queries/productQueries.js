@@ -5,7 +5,7 @@ import { productsRef } from '../firebase/firebase.refs';
 
 
 const productsApi = createApi({
-    reducerPath: 'api',
+    reducerPath: 'productsApi',
     baseQuery: fetchBaseQuery({baseUrl: '/'}),
     endpoints: builder => ({
         getProducts: builder.query({
