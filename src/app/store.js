@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit"
-import productsApi from "../api/queries/productQueries";
+import productsApi from "./queries/productQueries";
 
 
 const store = configureStore({
