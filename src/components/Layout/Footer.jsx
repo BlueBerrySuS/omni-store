@@ -20,13 +20,13 @@ const Footer = () => {
             Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.
           </p>
           <div className="flex gap-4 items-center mt-4">
-            <div className="gap-2.5 self-stretch py-1.5 my-auto text-white shadow-sm bg-zinc-900">
+            <div className="gap-2.5 self-stretch py-1.5 my-auto text-white shadow-sm bg-zinc-900 border-b-2 border-red-500">
               (219) 555-0114
             </div>
             <div className="self-stretch my-auto text-base">
               <span className="text-zinc-500">or</span>
             </div>
-            <div className="gap-2.5 self-stretch py-1.5 my-auto whitespace-nowrap shadow-sm bg-zinc-900">
+            <div className="gap-2.5 self-stretch py-1.5 my-auto whitespace-nowrap shadow-sm bg-zinc-900 border-b-2 border-red-500">
               <span className="text-white">Proxy@gmail.com</span>
             </div>
           </div>
@@ -87,28 +87,6 @@ const Footer = () => {
             className="object-contain shrink-0 aspect-[1.41] w-[45px]"
             alt="Payment method 2"
           />
-          <div className="flex flex-col w-[45px]">
-            <div className="flex shrink-0 h-8 rounded-md border border-solid bg-zinc-900 border-zinc-800" />
-          </div>
-          <div className="flex flex-col w-[45px]">
-            <div className="flex shrink-0 h-8 rounded-md border border-solid bg-zinc-900 border-zinc-800" />
-          </div>
-          <div className="flex flex-col leading-none text-black whitespace-nowrap rounded-none w-[65px]">
-            <div className="flex flex-col px-1.5 py-1 w-full rounded-md border border-solid bg-zinc-900 border-zinc-800">
-              <div className="flex gap-0.5 text-xs max-md:mr-1">
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/9cc231779151833a6add0b7e265b7748db8491155638d4b66eda13109d06da7e?placeholderIfAbsent=true&apiKey=f50474a5b21d437fb9b7a7b7c8e64b46"
-                  className="object-contain shrink-0 aspect-square fill-zinc-900 w-[11px]"
-                  alt="Secure icon"
-                />
-                <div>Secure</div>
-              </div>
-              <div className="text-xs font-semibold text-center">
-                Payment
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </footer>

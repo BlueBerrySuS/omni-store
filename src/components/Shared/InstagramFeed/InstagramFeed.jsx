@@ -12,13 +12,13 @@ const InstagramFeed = () => {
   return (
     <section className="mt-16 w-full max-w-[1320px] max-md:mt-10 max-md:max-w-full">
       <h2 className="text-3xl font-semibold leading-tight text-center text-black">Follow us on Instagram</h2>
-      <div className="flex flex-wrap gap-5 justify-between mt-8 w-full max-md:max-w-full">
+      <div className="flex flex-wrap gap-5 justify-between mt-8 w-full max-md:max-w-full ">
         {images.map((image, index) => (
           <img
             key={index}
             loading="lazy"
             src={image.src}
-            className="object-contain shrink-0 max-w-full rounded-xl aspect-square w-[200px]"
+            className="object-contain shrink-0 max-w-full rounded-xl aspect-square w-[200px] cursor-pointer"
             alt={image.alt}
           />
         ))}

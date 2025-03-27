@@ -34,7 +34,7 @@ const MainHeader = () => {
             <span className="self-stretch my-auto text-black">Omni-store</span>
           </Link>
           <form className="flex flex-wrap items-center self-stretch text-black whitespace-nowrap rounded-md border border-solid border-neutral-200 max-md:max-w-full">
-            <label htmlFor="search-input" className="sr-only">Search</label>
+            <label htmlFor="search-input" className="sr-only ">Search</label>
             <input
               type="text"
               id="search-input"
@@ -42,7 +42,7 @@ const MainHeader = () => {
               placeholder="Search"
               aria-label="Search"
             />
-            <button type="submit" className="gap-3 self-stretch px-6 py-3.5 my-auto text-sm font-semibold leading-tight bg-red-500 rounded-none max-md:px-5">
+            <button type="submit" className="gap-3 self-stretch px-6 py-3.5 my-auto text-sm font-semibold leading-tight bg-red-500 rounded-none max-md:px-5 cursor-pointer">
               Search
             </button>
           </form>
@@ -56,13 +56,14 @@ const MainHeader = () => {
               />
             </button>
             <div className="shrink-0 self-stretch my-auto w-0 h-6 border border-solid bg-stone-300 border-stone-300" />
-            <div className="flex gap-3 items-center self-stretch my-auto">
+            <Link to="/cart"><div className="flex gap-3 items-center self-stretch my-auto">
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/df23ff0a404c693a3f68731572c2b024ee46c81ce5be935052062fe1a0299799?placeholderIfAbsent=true&apiKey=f50474a5b21d437fb9b7a7b7c8e64b46"
                 className="object-contain shrink-0 self-stretch my-auto aspect-square w-[34px]"
                 alt="Shopping cart icon"
               />
+            
               <div className="flex flex-col self-stretch my-auto">
                 <div className="text-xs leading-tight text-black">Shopping cart:</div>
                 <div className="mt-2 text-sm font-medium leading-none text-black">
@@ -70,6 +71,7 @@ const MainHeader = () => {
                 </div>
               </div>
             </div>
+            </Link>
           </div>
         </div>
       </div>

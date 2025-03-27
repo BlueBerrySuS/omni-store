@@ -3,9 +3,9 @@ import React from 'react';
 const Hero = () => {
   return (
     <section className="mt-6 w-full max-w-[1319px] max-md:max-w-full">
-      <div className="flex gap-5 max-md:flex-col ">
+      <div className="flex max-md:flex-col ">
         <div className="flex flex-col w-[67%] max-md:ml-0 max-md:w-full">
-          <div className="flex relative flex-col grow items-start px-11 pt-8 pb-24 min-h-[600px] max-md:px-5 max-md:mt-6 max-md:max-w-full">
+          <div className="flex relative flex-col grow items-start px-11 pt-3  min-h-[600px] max-md:px-5 max-md:mt-6 max-md:max-w-full">
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/a4fff979d5bb884f614e11a91728d50fa488de7fc15f2b6e21f295a7e0cf11c5?placeholderIfAbsent=true&apiKey=f50474a5b21d437fb9b7a7b7c8e64b46"
@@ -46,7 +46,7 @@ const Hero = () => {
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/03cafb025c4f234d9b4223a2d114460a594e32ff95ff8dfa0814f6b50c31ceeb?placeholderIfAbsent=true&apiKey=f50474a5b21d437fb9b7a7b7c8e64b46"
-                className="object-cover absolute inset-0 size-full"
+                className="object-cover absolute inset-0 size-full rounded-lg"
                 alt=""
               />
               <div className="flex relative flex-col text-black">
@@ -71,8 +71,8 @@ const Hero = () => {
             <div className="flex relative flex-col justify-center px-10 py-16 mt-6 w-full text-center rounded-xl min-h-[288px] max-md:px-5 max-md:max-w-full">
               <img
                 loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/9c712bcd128ec26a00c4affccfa784cf48e39dfb12cb1833e8b2b3c6f9556d44?placeholderIfAbsent=true&apiKey=f50474a5b21d437fb9b7a7b7c8e64b46"
-                className="object-cover absolute inset-0 size-full"
+                src="https://img.freepik.com/free-vector/gradient-abstract-background_23-2149123397.jpg"
+                className="object-cover absolute inset-0 size-full rounded-lg"
                 alt=""
               />
               <div className="flex relative flex-col items-center w-full">

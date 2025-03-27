@@ -49,7 +49,7 @@ const PopularProducts = () => {
           View All
         </a>
       </div>
-      <div className="grid grid-cols-6 gap-6 mt-8 w-full max-w-[1321px] max-md:grid-cols-2 max-md:max-w-full">
+      <div className="grid grid-cols-6 gap-6 mt-8 w-full max-w-[1321px] max-md:grid-cols-2 max-md:max-w-full ">
         {products.map((product, index) => (
           <ProductItem key={index} {...product} />
         ))}

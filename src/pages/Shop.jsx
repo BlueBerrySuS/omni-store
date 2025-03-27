@@ -13,10 +13,13 @@ const Shop1 = () => {
       </header>
 
       <main className="flex flex-col justify-center items-start px-16 py-12 w-full text-base whitespace-nowrap min-h-[120px] max-md:px-5 max-md:max-w-full">
+
         <nav
+          
           className="flex relative gap-3 items-center"
           aria-label="Breadcrumb"
         >
+          
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/ed647e314c8687e937d3094c6db347667e458f79c198853057e168004b89d0d9?placeholderIfAbsent=true&apiKey=f50474a5b21d437fb9b7a7b7c8e64b46"
             className="object-contain w-6 aspect-square"

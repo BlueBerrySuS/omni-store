@@ -17,12 +17,12 @@ const Newsletter = () => {
             <input
               type="email"
               placeholder="Your email address"
-              className="flex-auto gap-2.5 px-6 py-3.5 mr-0 bg-white border border-solid border-neutral-200 rounded-[46px] w-[400px] max-md:px-5"
+              className="flex-auto gap-2.5 px-6 py-3.5 mr-0 bg-white border border-solid border-neutral-200 rounded-l-[46px] w-[400px] max-md:px-5"
               aria-label="Email address"
             />
             <button
               type="submit"
-              className="gap-4 self-stretch px-10 py-4 font-semibold leading-none whitespace-nowrap bg-red-500 rounded-[43px] max-md:px-5"
+              className="gap-4 self-stretch px-10 py-4 font-semibold leading-none whitespace-nowrap bg-red-500 rounded-r-[43px] max-md:px-5 cursor-pointer"
             >
               Subscribe
             </button>
