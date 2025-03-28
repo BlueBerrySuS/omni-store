@@ -7,6 +7,7 @@ import ProductDetailsPage from './pages/ProductPage';
 import { Route, Routes } from 'react-router-dom';
 import ShoppingCart from './pages/ShoppingCart';
 import Checkout from './pages/Checkout';
+import { WishlistPage } from './pages/WishlistPage';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
          <Route path='/product' element={<ProductDetailsPage />}/>
          <Route path='/cart' element={<ShoppingCart />}/>
          <Route path='/checkout' element={<Checkout />}/>
+         <Route path='/wishlist' element={<WishlistPage />}/>
          </Routes>
         <Footer />
     </>
