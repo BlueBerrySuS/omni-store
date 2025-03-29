@@ -7,9 +7,6 @@ import Newsletter from "../components/Shared/Newsletter/Newsletter";
 export const WishlistPage = () => {
   return (
     <div className="flex flex-col bg-white min-h-[screen]">
-      <div className="flex flex-col items-center bg-white">
-        <TopNav />
-      </div>
 
       <div className="w-full bg-[center] bg-[url('https://cdn.builder.io/api/v1/image/assets/TEMP/b6c8f412a9fbcc2dfa4545c48c015e1c752c3704')] h-[120px]" />
 

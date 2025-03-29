@@ -10,9 +10,7 @@ export default function ShoppingCart() {
   return (
     <CartProvider>
       <div className="flex overflow-hidden flex-col bg-white">
-        <nav className="flex flex-col items-center w-full bg-white max-md:max-w-full">
-          <TopNav />
-        </nav>
+
 
         <section className="flex relative flex-col justify-center items-start px-16 py-12 w-full text-base text-red-500 min-h-[120px] max-md:px-5 max-md:max-w-full">
           <img

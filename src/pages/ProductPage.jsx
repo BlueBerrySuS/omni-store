@@ -10,9 +10,7 @@ import Newsletter from "../components/Shared/Newsletter/Newsletter.jsx";
 export default function ProductDetailsPage() {
   return (
     <div className="flex overflow-hidden flex-col bg-white">
-      <header>
-        <TopNav />
-      </header>
+
 
       <main>
         <section className="flex relative flex-col justify-center items-start px-16 py-12 w-full text-base min-h-[120px] text-neutral-400 max-md:px-5 max-md:max-w-full">

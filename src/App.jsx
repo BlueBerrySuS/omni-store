@@ -8,6 +8,8 @@ import { Route, Routes } from 'react-router-dom';
 import ShoppingCart from './pages/ShoppingCart';
 import Checkout from './pages/Checkout';
 import { WishlistPage } from './pages/WishlistPage';
+import SignInBox from './pages/SigninAccount';
+import CreateAccount from './pages/CreateAccount';
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
          <Route path='/cart' element={<ShoppingCart />}/>
          <Route path='/checkout' element={<Checkout />}/>
          <Route path='/wishlist' element={<WishlistPage />}/>
+         <Route path='/signin' element={<SignInBox/>}/>
+         <Route path='/register' element={<CreateAccount/>}/>
          </Routes>
         <Footer />
     </>
